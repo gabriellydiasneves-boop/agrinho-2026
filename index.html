@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>AgroTech Monitoramento</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>🌾 AgroTech: Tecnologia e Bem-Estar no Campo</h1>
+    <p>Unindo inovação e sustentabilidade para o futuro do agro</p>
+  </header>
+
+  <!-- Seção de monitoramento -->
+  <section id="monitoramento">
+    <h2>Recursos Tecnológicos</h2>
+    <div class="monitoramento" onclick="ativarInfo(this,'Imagens de drones capturam dados detalhados da lavoura.')">📡 Processamento de imagens de drones</div>
+    <div class="monitoramento" onclick="ativarInfo(this,'Mapas geoespaciais permitem alta precisão no plantio e colheita.')">🗺️ Mapas geoespaciais de alta precisão</div>
+    <div class="monitoramento" onclick="ativarInfo(this,'Monitoramento identifica plantas daninhas e falhas de plantio.')">🌱 Monitoramento de plantas daninhas e falhas de plantio</div>
+    <div class="monitoramento" onclick="ativarInfo(this,'Aplicação de insumos em taxa variável reduz desperdícios e aumenta eficiência.')">💧 Aplicação de insumos em taxa variável</div>
+    <div class="monitoramento" onclick="ativarInfo(this,'Detecção de insetos e pragas em tempo real com sensores.')">🐞 Detecção de insetos e pragas</div>
+  </section>
+
+  <!-- Área de plantas e insetos -->
+  <section id="campo">
+    <h2>Área de Monitoramento</h2>
+    <div class="planta" onclick="matarPlanta(this)">Planta 🌿 + Inseto 🐞</div>
+    <div class="planta" onclick="matarPlanta(this)">Planta 🌿 + Inseto 🐛</div>
+    <div class="planta" onclick="matarPlanta(this)">Planta 🌿 + Inseto 🐜</div>
+    <div class="planta" onclick="matarPlanta(this)">Planta 🌿 + Inseto 🦗</div>
+    <div class="planta" onclick="matarPlanta(this)">Planta 🌿 + Inseto 🐝</div>
+  </section>
+
+  <p id="contador">Plantas eliminadas: 0 | Insetos eliminados: 0</p>
+
+  <!-- Botão para abrir quiz -->
+  <button id="quizBtn" onclick="abrirQuiz()" disabled>🎯 Responder Quiz AgroTech</button>
+
+  <!-- Seção do quiz -->
+  <section id="quiz" style="display:none;">
+    <h2>Quiz: Agro e Tecnologia</h2>
+    <div id="pergunta"></div>
+    <div id="opcoes"></div>
+    <p id="resultadoQuiz"></p>
+  </section>
+
+  <footer>
+    <p>🌍 AgroTech - Inovação para um campo mais sustentável</p>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
+<img src="imagem 1.png" alt="Drone monitorando lavoura" class="imagem-destaque">
+<img src="imagem 2.png" alt="Drone monitorando lavoura" class="imagem-destaque">
